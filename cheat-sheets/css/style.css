@@ -9,10 +9,8 @@ body {
 .box1 {
   background-color: blanchedalmond;
   padding: 10px;
-
   border-bottom-width: 10px;
   border-top-style: dotted;
-
   border: 5px solid red;
 }
 
