@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Build A Travel Agency Theme With Materialize CSS">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--local CSS style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body class="scrollspy">
+
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper teal">
+              <a href="#!" class="brand-logo center">TravelQuest</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#popularPlaces">Popular Places</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav teal" id="mobile-demo">
+            <li class=""><a class="white-text" href="#home">Home</a></li>
+                <li><a class="white-text" href="#search">Search</a></li>
+                <li><a class="white-text" href="#popularPlaces">Popular Places</a></li>
+                <li><a class="white-text" href="#gallery">Gallery</a></li>
+                <li><a class="white-text" href="#contact">Contact</a></li>
+          </ul>
+    </div>
+
+    <!-- Full length slider -->
+    <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://images.unsplash.com/photo-1464817739973-0128fe77aaa1?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://ununsplash.imgix.net/photo-1414849424631-8b18529a81ca?q=75&fm=jpg&s=0e993004a2f3704e8f2ad5469315ccb7"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?q=75&fm=jpg&s=6a4fc66161293fc4a43a6ca6f073d1c5"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <!-- Search -->
+
+    <div id="search" class="scrollspy">
+       <div class="container">
+           <h2 class="center white-text">Search Destinations</h2>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea white"></textarea>
+                  <label for="textarea1">Delhi, Kolkata, Chennai</label>
+                </div>
+              </div>
+            </form>
+          </div>
+       </div>
+    </div>
+
+    <!-- Icons -->
+
+    <div id="">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Popular places -->
+    <div id="popularPlaces" class="teal scrollspy">
+        <div class="container">
+            <h3 class="center white-text">Popular Places</h3>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/237/300/200">
+                          <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/230/300/200">
+                          <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/200/300/200">
+                          <span class="card-title">Card Title</span>
+                        </div>
+                        <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>          
+    </div>
+
+    <!-- Follow -->
+
+    <div class="follow ">
+        <div class="container center">
+            <h3 class="black-text">
+                Follow TravelQuest
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consequuntur?</p>
+            <i class="large material-icons">airport_shuttle</i>
+            <i class="large material-icons">alarm_add</i>
+            <i class="large material-icons">attach_money</i>
+            <hr>
+        </div>
+    </div>
+    
+   
+    <!-- Gallery -->
+
+    <div id="gallery">
+        <div class="container">
+            <h2 class="center">Gallery</h2>
+            <div class="row">
+                <div class="col s12 m3 "><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+            </div>
+
+            <div class="row ">
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+                <div class="col s12 m3"><img class="materialboxed"  src="https://picsum.photos/id/237/200/200"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h2 class="center">Contact Information</h2>
+            <div class="row">
+                <div class="col s12 m6">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="https://picsum.photos/id/1/200/150">
+                      <span class="card-title">Card Title</span>
+                    </div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information.
+                      I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">This is a link</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="row">
+                        <form class="col s12">
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                              <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Last Name</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                              <label for="disabled">Disabled</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="row center">
+                            <button class="btn btn-large center-align">Submit</button>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <footer class="page-footer teal">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+    
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <script src="main.js"></script>
+  </body>
+</html>

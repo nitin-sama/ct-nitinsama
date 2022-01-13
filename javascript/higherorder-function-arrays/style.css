@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Global styling ends here */
+
+/* Header styling */
+
+header {
+  background-color: cadetblue;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Main */
+
+main ul {
+  border: 1px solid grey;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+main ul li {
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  padding: 20px;
+  margin: 10px 0;
+}

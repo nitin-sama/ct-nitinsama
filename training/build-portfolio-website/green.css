@@ -1,0 +1,10 @@
+:root {
+  --backgroundColor: rgb(120, 134, 107);
+  --fontColor: #fff;
+  --infoBorder: rgb(150, 177, 125, 0.514);
+  --introBackground: rgb(82, 95, 70);
+  --introShadow: rgba(122, 145, 168, 0.384);
+  --buttonColor: blue;
+}
+
+/* Green theme colors config */

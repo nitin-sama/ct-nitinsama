@@ -1,0 +1,196 @@
+
+
+body{
+	font-family: Arial, Helvetica, sanse-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	background: whitesmoke;
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.highlight{
+	color: rgb(220, 20, 60);
+}
+
+h1{
+	padding: 0;
+	margin: 0;
+}
+
+h3{
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+.clr {
+	clear: both; 
+	height: 0px; 
+	margin-top: 0px; 
+	padding: 0px;
+}
+
+/*--Global ends here--*/
+
+header{
+	background-color: #1c2e4a;
+	min-height: 70px;
+	padding-top: 30px;
+	color: white;
+	border-bottom: 3px solid rgb(220, 20, 60);
+}
+
+header ul{
+	list-style: none;
+}
+
+header li{
+	float: right;
+	display: inline;
+	padding: 10px;
+}
+
+#branding{
+	float: left;
+}
+
+/*---Header ends here---*/
+
+#showCase{
+	min-height: 300px;
+	background-image: url(./img/showcase.png);
+	background-size: cover;
+	color:  white;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+#showCase h1{
+	margin: 0;
+	padding-top: 40px;
+	text-align: center;
+	color: white;
+}
+
+/*---showcase ends here---*/
+
+#newsLetter{
+	background-color: #1c2e4a;
+	padding: 20px;
+	min-height: 30px;
+}
+
+#newsLetter h1{
+	color: white;
+	float: left;
+}
+
+#newsLetter form{
+	float: right;
+}
+
+#newsLetter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 200px;
+}
+
+button{
+	height: 38px;
+	background-color: orange;
+	border: none;
+	padding: 0 20px 0 20px;
+	color: white;
+}
+
+/*---newsletter finishes here---*/
+#boxes{
+	padding: 20px;
+}
+.box{
+	width: 33.3%;
+	float: left; 
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.box img{
+	width: 150px;
+}
+
+footer{
+	background-color: #1c2e4a;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+
+/*---homepage finishes---*/
+.about{
+	margin: 10px;
+}
+.article1{
+	width: 70%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.article2{
+	width: 30%;
+	float: right;
+	padding: 10px;
+	box-sizing: border-box;
+	background-color: black;
+	color: white;
+}
+
+/*media queries*/
+
+@media(max-width: 768px){
+	header #branding, 
+	header nav, 
+	header nav li,
+	#newsLetter form,
+	#newsLetter h1,
+	.article1,
+	.article2,
+	.box{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#newsLetter form input[type="email"]{
+		width: 100%;
+	}
+	#newsLetter button{
+		display: block;
+		width: 100%;
+		text-align: center;
+		align-items: center;
+	}
+
+
+
+
+}

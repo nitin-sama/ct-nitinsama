@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: #fff;
+  padding: 15px 30px;
+  align-self: center;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 1;
+  transform: scale(101%);
+}
+
+/* Global style */
+
+header {
+  background-color: rgb(10, 36, 83);
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+header h3 {
+  color: rgb(226, 245, 245);
+  text-align: center;
+}
+
+.content-area {
+  margin-top: 40px;
+  align-self: center;
+}

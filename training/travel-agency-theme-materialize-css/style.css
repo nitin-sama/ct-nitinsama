@@ -1,0 +1,26 @@
+#search {
+  background: teal;
+}
+
+#search h2 {
+  margin: 0;
+  padding-top: 20px;
+}
+
+#popularPlaces {
+  margin: 0;
+}
+
+#popularPlaces h3 {
+  padding-top: 10px;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+  #gallery .container .row div {
+    display: flex;
+    justify-content: center !important;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,126 @@
+.navbar {
+  padding: 0;
+  background: #008080 !important;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.navbar .nav-link:hover {
+  background-color: #004d4d;
+}
+
+.navbar .active {
+  background-color: #004d4d;
+  width: 100%;
+}
+
+.showcase {
+  height: 60vh;
+  background: url(./img/dog.webp) no-repeat center center/cover;
+  padding: 30px 0;
+}
+
+.showcase .container {
+  background: #ffffff7c;
+  padding: 20px 25px 20px 20px;
+  border-radius: 2px;
+}
+
+.showcase button {
+  background: #008080;
+  color: #fff;
+}
+
+.grid {
+  background: #008080;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+}
+
+.grid i {
+  font-size: 4rem;
+  padding: 10px 0;
+}
+
+.grid p {
+  font-size: 0.9rem;
+}
+
+.grid .gridItems {
+  padding: 0px 20px;
+}
+
+#accordion {
+  background-color: whitesmoke;
+  padding: 40px 20px;
+}
+
+#accordion .accordion-button {
+  background-color: #008080;
+  color: white;
+}
+
+#accordion img {
+  width: 300px;
+  padding: 10px;
+}
+
+.newsLetter {
+  padding: 50px;
+  background-color: #008080;
+  text-align: center;
+  color: white;
+}
+
+.newsLetter .container {
+  width: 60%;
+}
+
+.newsLetter button {
+  margin-top: 10px;
+  background-color: #004d4d;
+  color: white;
+}
+
+.contact {
+  padding: 80px 50px;
+}
+
+.contact .container {
+  background-color: #0000002c;
+  width: 60%;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: #004d4d;
+  padding: 30px 0;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar .active {
+    background-color: transparent;
+  }
+  .navbar .nav-link:hover {
+    background-color: transparent;
+  }
+  .navbar .right .navbar-nav {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=style.css.map */

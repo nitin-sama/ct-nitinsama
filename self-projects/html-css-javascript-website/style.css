@@ -1,0 +1,508 @@
+/* Chakra Petch Font */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+button {
+  font-size: 1.8rem;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+button a {
+  position: relative;
+  z-index: 2;
+}
+button::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff1ead;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+.highlight {
+  padding: 2rem !important;
+  border-bottom: 4px solid red;
+}
+/* Global styles */
+
+/* Header styling begins here */
+header {
+  display: block;
+  background: #131313;
+  position: fixed;
+  width: 100%;
+  padding: 0 1rem;
+  z-index: 999;
+}
+
+header .navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navBar .logo {
+  align-self: center;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2rem;
+  z-index: 999;
+}
+
+header .navBar nav {
+  align-self: center;
+}
+
+header .navBar nav ul {
+  display: flex;
+  padding: 2rem 0;
+}
+
+header .navBar nav ul li a {
+  padding: 1rem 2rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+header .navBar nav ul li a:hover {
+  color: #9518fc;
+  transition: all 0.3s ease;
+}
+
+header .navBar nav .button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+  background: #833ab4;
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+
+header .navBar nav .button:hover {
+  border-bottom: none;
+  padding: 0.6rem 1.5rem;
+  color: #fff;
+}
+
+/* Header styling ends here */
+
+/* Hero styling starts here */
+
+.hero {
+  padding-top: 83px;
+  position: relative;
+  background: #000000;
+  background: linear-gradient(to right, #161616, #000000);
+}
+
+.hero .heroContent {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .heroContent h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero .heroContent h1 span {
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.hero .heroContent p {
+  font-size: 60px;
+  background: #da22ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+/* Hero styling ends here */
+
+/* About styling starts here */
+
+.about {
+  background-color: #131313;
+  padding: 10rem 1rem 5rem 1rem;
+}
+
+.about .aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.about .aboutContent .aboutImage {
+  align-self: center;
+  width: 100%;
+}
+
+.about .aboutContent .aboutText {
+  align-self: center;
+}
+.about .aboutContent h3 {
+  font-size: 2rem;
+  background-color: #fe3b6f;
+  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.about .aboutContent h5 {
+  font-size: 4rem;
+  background: #ff8177; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.about .aboutContent p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about .aboutContent .aboutImage {
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.about .aboutContent .aboutImage i {
+  color: #fff;
+  font-size: 10rem;
+}
+
+/* About styling ends here */
+
+.services {
+  background-color: #131313;
+  padding: 5rem 0;
+}
+
+.services h3 {
+  text-align: center;
+  font-size: 3rem;
+  background: #f7ff00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
+  background: linear-gradient(to right, #db36a4, #f7ff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.services .servicesFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .servicesFlex .serviceItem {
+  margin: 0.5rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.services .servicesFlex .serviceItem:hover {
+  transform: scale(110%);
+}
+
+.services .servicesFlex .serviceItem1 {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.services .servicesFlex .serviceItem2 {
+  background: #fdfc47; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #24fe41, #fdfc47);
+  background: linear-gradient(to left, #24fe41, #fdfc47);
+}
+
+.services .servicesFlex .serviceItem3 {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+.services .servicesFlex .serviceItem4 {
+  background: #ffe000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #799f0c, #ffe000);
+  background: linear-gradient(to left, #799f0c, #ffe000);
+}
+
+.services .servicesFlex .serviceItem h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.services .servicesFlex .serviceItem p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.services .servicesFlex .serviceItem .serviceButton {
+  background-color: #000;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+}
+
+/* Services ends here */
+
+/* Sign up has same style classes as about section */
+
+/* Footer styling begins here */
+
+footer {
+  background-color: #131313;
+  padding: 5rem 0;
+}
+
+footer .container {
+  width: 60%;
+}
+
+footer .footerGrid {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer .footerGrid h3 {
+  margin-bottom: 1rem;
+}
+
+footer .footerGrid li {
+  margin-bottom: 0.3rem;
+}
+
+footer .footerFlex {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footerFlex div {
+  align-self: center;
+  text-align: center;
+}
+
+footer .footerFlex .socialLinks i {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+/* Footer ends here */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  header .navBar nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.5 s ease;
+    z-index: -1;
+    text-align: center;
+    padding-top: 4.5rem;
+  }
+  header .navBar nav ul.active {
+    background-color: #131313;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: all 0.5 s ease;
+    z-index: 99;
+    height: 60vh;
+    font-size: 1.6rem;
+    padding-bottom: 0;
+  }
+  header .navBar nav .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80px;
+    margin: auto;
+  }
+  header .container .navBar .hamburger {
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    cursor: pointer;
+    z-index: 500;
+  }
+  header .navBar .hamburger span {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    transition: 0.1s ease-in-out;
+  }
+  header .navBar .hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  header .navBar .hamburger.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  header .navBar .hamburger.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  /* Hero */
+  .hero .heroContent h1 {
+    font-size: 3rem;
+  }
+
+  .hero .heroContent p {
+    font-size: 2rem;
+  }
+
+  /* About */
+
+  .about .aboutContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .aboutContent .aboutImage {
+    height: 300px;
+  }
+
+  .about .aboutContent .aboutImage i {
+    font-size: 5rem;
+  }
+  .about .aboutContent .aboutText {
+    text-align: center;
+  }
+  .about .aboutContent h3 {
+    font-size: 2rem;
+  }
+
+  .about .aboutContent h5 {
+    font-size: 2rem;
+  }
+
+  .about .aboutContent p {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  footer .footerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .footerFlex {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  footer .footerFlex div {
+    align-self: center;
+    padding-top: 1rem;
+  }
+}

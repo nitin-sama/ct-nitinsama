@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+/* Global stlying */
+
+/* Showcase styling starts here */
+
+#showcase {
+  background: url(./img/dog.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-size: 50px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+#showcase .button {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#showcase .button:hover {
+  opacity: 0.5;
+}
+
+/* Showcase styling ends here */
+
+/* Section a styling starts here */
+
+#section-a {
+  padding: 20px;
+  background: #926239;
+  text-align: center;
+}
+
+/* Section a styling ends here */
+
+/* Section b styling starts here */
+
+#section-b {
+  padding: 20px;
+  background: white;
+  text-align: center;
+  color: #926239;
+}
+
+/* Section b styling ends here */
+
+/* Section c styling starts here */
+
+#section-c {
+  display: flex;
+  color: #926239;
+}
+
+#section-c div {
+  padding: 20px;
+}
+
+#section-c .box1,
+#section-c .box3 {
+  background: #926239;
+  color: white;
+}
+
+/* Section c styling ends here */
+
+/* Media queries */
+
+@media (max-width: 700px) {
+  #section-c {
+    flex-direction: column;
+  }
+}

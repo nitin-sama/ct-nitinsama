@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio Website">
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Theme CSS files -->
+        <link id="theme-style" rel="stylesheet" href="">
+
+        
+        <title>Nitin Thakur</title>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header><h1>Hi, I'm Nitin Thakur</h1></header>
+
+        <main>
+
+            <!-- Nav and intro -->
+
+            <section class="navIntro">
+                <div class="container">
+                    <div class="navGrid">
+                        <div class="dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                        </div>
+                        <div class="contact">
+                            <ul>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <div class="image">
+                            <img src="./img/pp.png" alt="Profile Picture" loading="lazy"/>
+                            <div class="theme">
+                                <h5>Personalize Theme</h5>
+                                <div class="themeDots">
+                                    <div data-mode="light" id="light-theme" class="dots theme1 theme-dot"></div>
+                                    <div data-mode="dark" id="dark-theme" class="dots theme2 theme-dot"></div>
+                                    <div data-mode="green" id="green-theme" class="dots theme3 theme-dot"></div>
+                                    <div data-mode="purple" id="purple-theme" class="dots theme4 theme-dot"></div>
+                                </div>
+                                <p><small><i>*Theme settings will be saved for
+                                    your next visit</i></small></p>
+                            </div>
+                        </div>
+                        <div class="introText">
+                            <div class="introShadow">
+                                    <div class="text">
+                                        <div class="cornerCircles circle1"></div>
+                                        <div class="cornerCircles circle2"></div>
+                                        <h3>What I do?</h3>
+                                        <p>I am a front-end developer at Coalition Technologies.</p>
+                                        <div class="cornerCircles circle3"></div>
+                                        <div class="cornerCircles circle4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About me section -->
+
+            <section class="about">
+                <div class="container">
+                    <div class="aboutGrid">
+                        <div class="aboutText">
+                            <div class="text1">
+                                <h3>More about me</h3>
+                                <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+                                <p>While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.</p>
+                            </div>
+                            <hr>
+                            <div class="text2">
+                                <h3>TOP EXPERTISE</h3>
+                                <p>Front-end Developer with knowledge in HTML, CSS, JS, jQyery,React, Bootstrap, Angular. <br><a href="#">Download Resume</a></p>
+                                <div class="text2Grid">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                        <li>JQuery</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Bootstrap</li>
+                                        <li>React</li>
+                                        <li>Angular</li>
+                                        <li>Jquery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aboutImage">
+                            <img src="./img/about.jpg" alt="about" loading="lazy"/>
+                            <h3>Find me on LinkedIn & Github</h3>
+                            <a href="#">LinkedIn: @ni3sama</a>
+                            <a href="#">Github: @nitinsama</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+
+            <section class="projects">
+                <div class="container">
+                    <h2>Some of my past projects</h2>
+                    <div class="projectGrid">
+                        <div class="grid1">
+                            <img src="./img/image1.jpg" alt="dogs" loading="lazy"/>
+                            <div class="imageText">
+                                <h4>Lorem, ipsum.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="grid1">
+                            <img src="./img/image2.jpg" alt="dogs" loading="lazy"/>
+                            <div class="imageText">
+                                <h4>Lorem, ipsum.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="grid1">
+                            <img src="./img/image3.jpg" alt="dogs" loading="lazy"/>
+                            <div class="imageText">
+                                <h4>Lorem, ipsum.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get in touch form -->
+            <section class="form">
+                <div class="container">
+                    <div class="formContainer">
+                        <h3>Get In Touch</h3>
+                        <form id="contact-form">
+                            
+                            <a name="contact"></a>
+            
+                            <label>Name</label>
+                            <input class="input-field" type="text" name="name">
+            
+                            <label>Subject</label>
+                            <input class="input-field" type="text" name="subject">
+            
+                            <label>Email</label>
+                            <input class="input-field" type="text" name="email">
+            
+                            <label>Message</label>
+                            <textarea class="input-field" name="message"></textarea>
+            
+                            <input id="submit-btn" type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <!-- Script File -->
+    <script src="main.js"></script>
+    </body>
+</html>

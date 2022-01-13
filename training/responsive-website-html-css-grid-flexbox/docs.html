@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Responsive Website | HTML, CSS Grid, Flexbox & More">
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f91efc2493.js" crossorigin="anonymous"></script>
+        
+        <title>Responsive Website</title>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+
+        <header>
+            <div class="container">
+                <div class="headerGrid">
+                    <h1>Loruki.</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="features.html">Featues</a></li>
+                            <li><a href="docs.html">Docs</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- docs heading kept same as features -->
+        <section class="features">
+            <div class="container">
+                <div class="featuresGrid">
+                    <div class="featuresText">
+                        <h1>Docs</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, iste.</p>
+                    </div>
+                    <div class="featuresImage">
+                        <img src="./img/docs.png" alt="docs" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Docs grid -->
+
+        <section class="docsContainer">
+            <div class="container">
+                <div class="docsGrid">
+                    <div class="docsLinks">
+                        <h3>Essentials</h3>
+                        <ul>
+                            <li><a href="#" class="active">Introduction</a></li>
+                            <li><a href="#">About Loruki</a></li>
+                            <li><a href="#">Installation</a></li>
+                        </ul>
+                        <h3>Deployment</h3>
+                        <ul>
+                            <li><a href="#">Setting up a container</a></li>
+                            <li><a href="#">Using the CLI</a></li>
+                            <li><a href="#">Managing resources</a></li>
+                            <li><a href="#">Upgrade & downgrade</a></li>
+                        </ul>
+                    </div>
+                    <div class="docsIntro">
+                        <h2>
+                            Introduction
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quam, tempore minima qui assumenda adipisci veniam, dolores quaerat incidunt eveniet aperiam hic eum consectetur inventore quisquam sunt quo ex architecto tenetur dicta consequatur nobis. Inventore fuga qui mollitia deserunt quidem tempore eos! Illo ipsam facilis fuga minus soluta? Dolorem, earum.</p>
+                        <div class="success">
+                            <i class="fa fa-info" aria-hidden="true"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti facere cumque quis corporis laboriosam inventore.</p>
+                        <button class="btn">Install CLI</button>
+
+                        <h3>Requirements</h3>
+                        <p>Windows 10, Max OSX, Linux</p>
+
+                        <h3>Install</h3>
+                        <p>Mac (Homebrew)</p>
+                        <p class="dark">$ brew install loruki-cli</p>
+                        <p>NPM</p>
+                        <p class="dark">$ npm install loruki-cli</p>
+                        <p>Yarn</p>
+                        <p class="dark">$ yarn install loruki-cli</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="container">
+                <div class="footerGrid">
+                    <div class="logo">
+                        <h3>Loruki</h3>
+                        <p>Copyright &copy; 2021</p>
+                    </div>
+                    <nav class="quickLinks">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="docs.html">Docs</a></li>
+                        </ul>
+                    </nav>
+                    <div class="socialMedia">
+                        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

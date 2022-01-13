@@ -1,0 +1,10 @@
+:root {
+  --backgroundColor: #192734;
+  --fontColor: #fff;
+  --infoBorder: rgba(88, 117, 146, 0.514);
+  --introBackground: rgb(21, 32, 43);
+  --introShadow: rgba(64, 95, 126, 0.575);
+  --buttonColor: orange;
+}
+
+/* Dark theme colors config */

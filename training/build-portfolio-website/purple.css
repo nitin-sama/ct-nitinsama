@@ -1,0 +1,10 @@
+:root {
+  --backgroundColor: rgb(126, 76, 116);
+  --fontColor: #fff;
+  --infoBorder: rgb(158, 106, 148, 0.514);
+  --introBackground: rgb(104, 48, 93);
+  --introShadow: rgb(126, 76, 116);
+  --buttonColor: green;
+}
+
+/* Purple theme colors config */

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.active {
+  padding: 0 10px !important;
+  padding-bottom: 21px !important;
+  border-bottom: 2px solid red !important;
+}
+/* Global */
+
+header {
+  background-color: teal;
+  border-bottom: 1px solid red;
+  width: 100%;
+}
+
+.navRow {
+  padding: 1rem;
+}
+
+.navRow .logo {
+  margin: 5px 0;
+}
+
+.navRow h1,
+.navRow a {
+  color: white;
+}
+
+.navRow span {
+  color: red;
+}
+
+.navRow ul {
+  margin: 5px 0px;
+}
+
+.navRow ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.navRow .menu a {
+  padding: 10px 10px;
+}
+
+.navRow a:hover {
+  padding: 0 10px;
+  padding-bottom: 21px;
+  border-bottom: 2px solid red;
+}
+
+/* Navbar styling ends here */
+
+#showcase {
+  background: url(./img/background.jpg) no-repeat center center/cover;
+  height: 70vh;
+  border-bottom: 1px solid red;
+}
+
+#showcase .rowContent {
+  height: 70vh;
+  line-height: 3rem;
+}
+
+#showcase .rowContent h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+#showcase .rowContent span {
+  color: red;
+}
+
+#showcase .rowContent p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#showcase .showcaseText {
+  background: rgba(0, 0, 0, 0.39);
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+/* Showcase ends here */
+
+#coreFeatures {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+}
+
+#coreFeatures h1 {
+  font-size: 2rem;
+}
+
+#coreFeatures p {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+#coreFeatures i {
+  font-size: 6rem;
+  color: red;
+  margin: 1rem 0;
+}
+
+#coreFeatures h3 {
+  margin: 1rem 0;
+}
+/* Core features ends here */
+
+#mockup {
+  background: url(./img/background2.jpg) no-repeat center center/cover;
+  padding: 2rem;
+  color: white;
+  line-height: 2rem;
+}
+
+#mockup img {
+  width: 200px;
+}
+
+#mockup h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+/* Mockup ends here */
+
+#aboutUs {
+  padding-bottom: 2rem;
+}
+
+#aboutUs h1 {
+  margin: 2rem 0;
+}
+
+#aboutUs p {
+  margin-bottom: 1rem;
+}
+
+/* About us ends here */
+
+#contact {
+  margin: 2rem 0;
+  line-height: 2rem;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+
+/* Contact us ends here */
+footer {
+  background: #444;
+  padding: 20px;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+footer li {
+  line-height: 2rem;
+}
+
+.footerBottom {
+  background: teal;
+  padding: 30px;
+  border-top: 1px solid red;
+}
+/* footer ends here */
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .navRow ul li {
+    display: block;
+    padding: 5px 0;
+  }
+
+  .active {
+    border-bottom: 0px solid red !important;
+  }
+
+  #showcase .showcaseText {
+    width: 90%;
+  }
+
+  .navRow .logo {
+    margin-bottom: 1rem;
+  }
+
+  #showcase .rowContent p {
+    display: none;
+  }
+  #showcase .rowContent h1 {
+    font-size: 1.8rem;
+  }
+
+  #mockup img {
+    display: none;
+  }
+  .rowCont div {
+    border-bottom: 1px solid #555;
+  }
+  footer h4 {
+    color: yellow;
+    margin-top: 15px;
+  }
+}

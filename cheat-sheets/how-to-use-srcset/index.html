@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Free Web tutorials">
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f91efc2493.js" crossorigin="anonymous"></script>
+        
+        <title>Full-Screen Site</title>
+    </head>
+    <body>
+        <h1>According to screen resolution!</h1>
+        <picture>
+
+            <source srcset="./img/small.webp" media="(max-width: 400px)" loading="lazy"/>
+            <source srcset="./img/medium.webp" media="(max-width: 800px)" loading="lazy"/>
+            <source srcset="./img/big.webp" loading="lazy"/>
+            <img src="./img/big.webp" alt="big screen image">
+        </picture>
+        
+    <!-- Script File -->
+    <script src="main.js"></script>
+    </body>
+</html>

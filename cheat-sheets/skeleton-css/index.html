@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Skeleton CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f91efc2493.js" crossorigin="anonymous"></script>
+        
+        <title>Skeleton CSS</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Headings -->
+            <h1>Heading1</h1>
+            <h2>Heading2</h2>
+            <h3>Heading3</h3>
+            <h4>Heading4</h4>
+            <h5>Heading5</h5>
+            <h6>Heading6</h6>
+
+            <!-- Float -->
+
+            <h2 class="u-pull-left">Left</h2>
+            <h2 class="u-pull-right">Right</h2>
+
+            <!-- Clear float -->
+            <div class="u-cf"></div>
+
+            <!-- Buttons -->
+            <button>Button</button>
+            <input type="submit">
+            <input type="button" value="submit">
+            <a href="" class="button">Submit</a>
+
+            <br>
+
+            <!-- Primary Buttons -->
+            <button class="button-primary">Button</button>
+            <input type="submit" class="button-primary">
+            <input type="button" value="submit" class="button-primary">
+            <a href="" class="button">Submit</a>
+
+            <br>
+
+            <!-- Full width for  every tag not only for button-->
+            <button class="u-full-width button-primary">Full Width</button>
+
+            <!-- Lists -->
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </li>
+                <li>Contact</li>
+            </ul>
+
+            <!-- Code Block -->
+            <pre>
+                <code>
+                    body{
+                        color:#fff;
+                        background:#eee;
+                    }
+                </code>
+            </pre>
+
+            <!-- Tables -->
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nitin Thakur</td>
+                        <td>23</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Nitin Thakur</td>
+                        <td>23</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Nitin Thakur</td>
+                        <td>23</td>
+                        <td>Male</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <!-- Forms -->
+            <form action="">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." class="u-full-width">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="u-full-width">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country" class="u-full-width">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" class="u-full-width"></textarea>
+            
+                <input type="submit" value="Submit" class="u-full-width button-primary">
+            
+            </form>
+
+            <hr>
+
+            <!-- Grid -->
+
+            <div class="row">
+                <div class="eight columns">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+                <div class="four columns">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="six columns">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+                <div class="six columns">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="one-third column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+                <div class="two-thirds column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="one-third column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+                <div class="one-third column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+                <div class="one-third column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="one-half column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+                <div class="one-half column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maxime laboriosam, qui quod provident neque perspiciatis? Accusamus veniam culpa, nisi suscipit perspiciatis enim quod aliquid eos tenetur, fuga explicabo eveniet natus perferendis nobis maxime maiores, eum ipsum dolor illum repudiandae?
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Script File -->
+    <script src="main.js"></script>
+    </body>
+</html>

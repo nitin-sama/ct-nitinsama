@@ -1,0 +1,65 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+#showcase {
+  margin-top: 100px;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#showcase img {
+  width: 70%;
+  margin-left: 60px;
+}
+
+#showcase .showcase-right {
+  margin-top: 90px;
+}
+
+#testimonial {
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#testimonial p {
+  font-size: 1.3rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#testimonial p.customer {
+  font-size: 1rem;
+  color: #666;
+}
+
+#info1 .info-right {
+  margin-top: 90px;
+}
+
+#info1 img {
+  width: 300px;
+}
+
+#contact {
+  background-image: linear-gradient(
+    140deg,
+    #eadedb 0%,
+    #bc70a4 50%,
+    #bfd641 75%
+  );
+  padding: 20px 0;
+}
+
+footer {
+  padding: 30px;
+}

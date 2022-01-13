@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 50px 0;
+  line-height: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+main {
+  position: relative;
+}
+/* Global style */
+
+p {
+  padding: 20px 0;
+}
+
+.changeColor {
+  color: red;
+}
+
+button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 40px;
+  padding: 20px 17px;
+  border-radius: 50%;
+  border: none;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}

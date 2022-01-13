@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(230, 247, 241);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main hr {
+  background-color: rgb(78, 155, 242);
+  width: 100px;
+  height: 5px;
+  margin: 30px 0;
+  border: none;
+}
+
+main .image-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  gap: 10px;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.275);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.288);
+}
+
+.image-card img {
+  border-radius: 50%;
+  border-right: 4px solid rgb(78, 155, 242);
+}
+
+.image-card h2 {
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+
+.image-card h3 {
+  font-size: 15px;
+  color: rgb(78, 155, 242);
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.image-card p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.image-card .button-grid button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 0 10px;
+  color: rgb(78, 155, 242);
+  cursor: pointer;
+}
+
+.image-card .button-grid button:hover {
+  transform: scale(110%);
+}

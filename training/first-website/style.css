@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.clr {
+  clear: both;
+  height: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+/* Global styling */
+
+/* Header styling starts here */
+
+header {
+  background-color: orange;
+}
+
+.header {
+  width: 80%;
+  color: white;
+  margin: auto;
+}
+
+header h1 {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.navBar {
+  background-color: black;
+}
+
+.navBar ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin: auto;
+  width: 80%;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.navBar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navBar li {
+  display: inline;
+}
+
+/* Header styling ends here */
+
+/* Showcase styling starts here */
+
+.showCase {
+  margin: 0px;
+  background-image: url(background.jpg);
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.showCase h1 {
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.showCaseContent {
+  width: 80%;
+  margin: auto;
+}
+
+/* Showcase styling ends here */
+
+/* Main content styling starts here */
+
+.mainContent {
+  width: 70%;
+  float: left;
+  border: 2px solid gray;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Main content styling ends here */
+
+/* Side content styling starts here */
+
+.sideContent {
+  width: 30%;
+  float: right;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border: 2px solid gray;
+  box-sizing: border-box;
+}
+
+/* Side content styling ends here */
+
+/* Footer styling starts here */
+
+footer {
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Footer styling ends here */
+
+/* Media queries */
+
+@media (max-width: 700px) {
+  .mainContent {
+    width: 100%;
+    float: none;
+  }
+  .sideContent {
+    width: 100%;
+    float: none;
+  }
+
+  .showCase h1 {
+    font-size: 2rem;
+  }
+}

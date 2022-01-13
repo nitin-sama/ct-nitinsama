@@ -1,0 +1,187 @@
+body {
+  background-color: whitesmoke;
+  line-height: 1.5em;
+  margin: 0;
+  width: 80%;
+  margin: auto;
+}
+
+.box1 {
+  background-color: blanchedalmond;
+  padding: 10px;
+
+  border-bottom-width: 10px;
+  border-top-style: dotted;
+
+  border: 5px solid red;
+}
+
+.box1 h1 {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua";
+}
+
+.box2 {
+  border: 5px solid lightgray;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.box2 h1 {
+  color: black;
+}
+
+.categories {
+  margin-top: 5px;
+  border: 5px solid black;
+  padding: 10px;
+  padding-top: 5px;
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  list-style: square;
+  list-style: none;
+  list-style-image: url(Tick.png);
+}
+
+.categories a {
+  text-decoration: none;
+  color: black;
+}
+
+.categories a:hover {
+  color: yellow;
+}
+
+.categories a:active {
+  color: green;
+}
+
+.categories a:visited {
+  color: red;
+}
+
+.myForm {
+  margin-top: 5px;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.formGroup {
+  padding-bottom: 10px;
+}
+
+.formGroup label {
+  display: block;
+}
+
+.formGroup input[type="text"],
+.formGroup textarea {
+  width: 100%;
+}
+
+.button {
+  background-color: blue;
+  padding: 10px 20px;
+  border: none;
+  color: black;
+}
+
+.button:hover {
+  background-color: black;
+  color: blue;
+  cursor: pointer;
+}
+
+.block {
+  margin-top: 10px;
+  float: left;
+  width: 33.3%;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.mainContent {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sideContent {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: black;
+  color: wheat;
+}
+
+.clr {
+  clear: both;
+  height: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.box3 {
+  margin-top: 10px;
+  border: 1px solid black;
+  background-color: white;
+  width: 100%s;
+  height: 500px;
+  position: relative;
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.box3 h2 {
+  position: relative;
+  top: 400px;
+}
+.box3 h1 {
+  position: absolute;
+  top: 400px;
+  right: 10px;
+}
+
+/* Text Animation */
+
+.containerAnimated {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animated {
+  font-family: "Charm", cursive !important;
+  margin: 0;
+  padding: 50px;
+  font-size: 6rem;
+  background: url(./animation.png) no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 90s linear infinite;
+  -webkit-animation: moveBg 90s linear infinite;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0% 30%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Materialize Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+        <!-- Carousel -->
+        <h1>Carousel</h1>
+        <div class="carousel">
+            <a href="#one!" class="carousel-item">
+                <img src="http://lorempixel.com/400/400/cats/1/" alt="random">
+            </a>
+            <a href="#two!" class="carousel-item">
+                <img src="http://lorempixel.com/400/400/cats/2/" alt="random">
+            </a>
+            <a href="#three!" class="carousel-item">
+                <img src="http://lorempixel.com/400/400/cats/3/" alt="random">
+            </a>
+            <a href="#four!" class="carousel-item">
+                <img src="http://lorempixel.com/400/400/cats/4/" alt="random">
+            </a>
+            <a href="#five!" class="carousel-item">
+                <img src="http://lorempixel.com/400/400/cats/5/" alt="random">
+            </a>
+        </div>
+
+        <!-- Carousel full slider -->
+
+        <h1>Carousel full slider</h1>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+        </div>
+
+        <!-- Collapsible -->
+        <h1>Collapsible</h1>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">
+                        filter_drama
+                    </i>First
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, incidunt.</span>
+                </div>
+            </li>
+            <li class="active">
+                <div class="collapsible-header">
+                    <i class="material-icons">
+                        filter_drama
+                    </i>Second
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, incidunt.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">
+                        filter_drama
+                    </i>Third
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, incidunt.</span>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Toasts -->
+        <h1>Toasts</h1>
+
+        <a onclick="M.toast(
+            {html: 'I am a toast',
+            displayLength: '1000'
+            })" class="btn">Toast!
+        </a>
+
+        <!-- Tooltips -->
+        <h1>Tooltips</h1>
+        <a href="" class="btn tooltipped" data-position="left" data-tooltip="I am tooltip">Hover Me</a>
+        <a href="" class="btn tooltipped" data-position="bottom" data-tooltip="I am tooltip">Hover Me</a>
+        <a href="" class="btn tooltipped" data-position="top" data-tooltip="I am tooltip">Hover Me</a>
+        <a href="" class="btn tooltipped" data-position="right" data-tooltip="I am tooltip">Hover Me</a>
+
+
+        <!-- Dropdwons -->
+        <h1>Dropdowns</h1>
+        <!-- Dropdown Trigger -->
+        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+        </ul>
+
+        <!-- Material Boxed -->
+        <h1>Material Boxed</h1>
+        <img class="materialboxed" src="https://picsum.photos/id/237/300/300">
+
+        <!-- Slider -->
+        <h1>Slider</h1>
+        <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                <div class="caption right-align">
+                  <h3>Right Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                <div class="caption center-align">
+                  <h3>This is our big Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
+        </div>
+
+        <!-- Modal -->
+        <h1>Modal</h1>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatem odit maiores distinctio cumque asperiores mollitia nam molestias hic voluptas omnis temporibus, quaerat exercitationem inventore non sequi illum et. Expedita reprehenderit delectus esse explicabo corrupti facilis autem et totam neque ab, incidunt recusandae nisi, inventore corporis saepe velit cupiditate magni.</p>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat green">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat red">Disagree</a>
+            </div>
+        </div>
+
+        <!-- Sidenav -->
+        <h1>Sidenav</h1>
+        <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="https://picsum.photos/id/237/300/300">
+              </div>
+              <a href="#user"><img class="circle" src="https://picsum.photos/id/237/300/300"></a>
+              <a href="#name"><span class="white-text name">John Doe</span></a>
+              <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <!-- Tabs -->
+
+        <h3>Tabs</h3>
+        <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+              </ul>
+            </div>
+            <div id="test1" class="col s12">Test 1</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+        </div>
+
+        <!-- Tap target -->
+        <div class="fixed-action-btn">
+        
+            <a id="menu" class="waves-effect waves-light btn btn-floating btn-large red" onclick="$('.tap-target').tapTarget('open')"><i class="material-icons">menu</i></a>
+
+            <!-- Tap Target Structure -->
+            <div class="tap-target" data-target="menu">
+                <div class="tap-target-content">
+                <h5>Title</h5>
+                <p>A bunch of text</p>
+                </div>
+            </div>
+        </div>
+           
+        <!-- Scrollspy -->
+
+        <h1>Scroll spy</h1>
+        <div class="row">
+            <div class="col s12 m9 l10">
+              <div id="introduction" class="section scrollspy">
+                <p>Content </p>
+              </div>
+        
+              <div id="structure" class="section scrollspy">
+                <p>Content </p>
+              </div>
+        
+              <div id="initialization" class="section scrollspy">
+                <p>Content </p>
+              </div>
+            </div>
+            <div class="col hide-on-small-only m3 l2">
+              <ul class="section table-of-contents">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#initialization">Intialization</a></li>
+              </ul>
+            </div>
+          </div>
+    </div>
+
+    <div style="height: 600px;"></div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+
+        //default slider
+        $(document).ready(function(){
+            //Init carousel
+            $('.carousel').carousel();
+        });
+
+        //full width slider
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true
+        });
+
+        //Collapsible
+
+        $(document).ready(function(){
+            $('.collapsible').collapsible();
+        });
+
+        //Tooltip
+        $(document).ready(function(){
+            $('.tooltipped').tooltip();
+        });
+
+        //dropdown
+        $('.dropdown-trigger').dropdown();
+
+        //Material Box
+        $(document).ready(function(){
+            $('.materialboxed').materialbox();
+        });
+
+        //Slider
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
+
+        //Modal
+        $(document).ready(function(){
+            $('.modal').modal();
+        });
+
+        //Sidenav
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+
+        //Tabs
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+
+        //tao
+        $(document).ready(function(){
+            $('.tap-target').tapTarget();
+        });
+
+        //scrollspy
+        $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+  </body>
+</html>

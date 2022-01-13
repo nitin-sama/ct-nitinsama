@@ -1,0 +1,613 @@
+/* Rubik font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #1ce783;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Global stylings */
+
+/* Header styling begins */
+
+header {
+  background: url(./img/header.jpg) no-repeat center center/cover;
+  height: 80vh;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+header nav ul a {
+  padding: 1rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+header nav ul a:hover {
+  letter-spacing: 3px;
+  /* border: 1px solid white; */
+}
+
+header .showcase {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header .showcase h3 {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0 0 1.5rem 0;
+}
+
+header .showcase img {
+  width: 300px;
+  height: 100px;
+}
+
+header .showcase .intro {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1rem 0 2rem 0;
+}
+
+header .showcase .channels {
+  color: white;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+header .showcase .btn {
+  display: inline-block;
+  background: #eee;
+  padding: 1.2rem 2rem;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 1.4rem;
+  justify-self: center;
+}
+
+header .showcase .btn:hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+header .showcase .terms {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+/* Header styling ends */
+
+/* Bundle styling starts */
+
+.bundle {
+  background: #0e3b48;
+}
+
+.bundle .bundleGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 3rem;
+  padding: 2rem 3rem;
+}
+
+.bundle .bundleGrid img {
+  width: 312.26px;
+  height: 70px;
+  justify-self: center;
+  align-self: center;
+}
+
+.bundle .bundleGrid .bundleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bundle .bundleGrid .bundleText h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.bundle .bundleGrid .bundleText p {
+  color: #fff;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.bundle .bundleGrid .btn {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.bundle .bundleGrid .bundleButton {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+.bundle .bundleGrid .bundleButton button {
+  background: #0e3b48;
+  outline: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.bundle .bundleGrid .bundleButton button:hover {
+  transform: scale(0.98);
+}
+
+/* Bundle styling starts */
+
+/* Plan includes styling starts here */
+
+.plans {
+  background: #000;
+  padding: 7rem 1rem;
+  color: #fff;
+}
+
+.plans .plansText {
+  text-align: center;
+}
+
+.plans .plansText h4 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.plans .plansText .extraLarge {
+  font-size: 4.2rem;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+
+.plans .plansText .intro {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+.plans .plansFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plans .plansFlex img {
+  width: 294px;
+  height: 450px;
+}
+
+.plans .plansFlex .flexImage {
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.plans .plansFlex .flexImage .flexImageText {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.39);
+}
+.plans .plansFlex .flexImage .flexImageText p:first-child {
+  padding-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.plans .plansFlex .flexImage .flexImageText p:last-child {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Plan includes styling ends here */
+
+/* Live TV styling starts here */
+
+.liveTv {
+  background: #151516;
+  color: white;
+  padding: 3rem 3rem;
+}
+
+.liveTv .liveTvText {
+  border: 4px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem 1rem;
+  border-radius: 10px;
+}
+
+.liveTv .liveTvText h5 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.liveTv .liveTvText .extraLargeText {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.liveTv .liveTvText .intro {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.liveTv .liveTvText .terms {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.liveTv .liveTvText .btn {
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.liveTv .liveTvText .btn:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+/* Live TV styling ends here */
+
+/* Live sports styling begins here */
+
+.liveTv2 {
+  background: url(./img/live-sports.jpg) no-repeat center center/cover;
+  padding: 10rem 0;
+  color: #fff;
+}
+
+.liveTv2 .extraLargeText {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.liveTv2 .intro {
+  max-width: 550px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.liveTv2 .logoFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.liveTv2 .logoImage img {
+  width: 60px;
+  height: 20px;
+  align-self: center;
+}
+
+.liveTv2 .logoImage {
+  width: 60px;
+  height: 60px;
+  margin: 1rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.liveTv2 .terms {
+  margin-top: 0.5rem;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* Live sports styling ends here */
+
+/* Footer styling begins here */
+
+footer {
+  background: #ebedf2;
+  padding: 2rem 0;
+  color: #333333;
+}
+
+footer a {
+  color: #333333;
+  line-height: 1.8rem;
+}
+
+footer h4 {
+  margin-bottom: 1rem;
+}
+
+footer .quickLinks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+footer .socialLinks {
+  padding: 2rem 0 0 1rem;
+}
+
+footer .socialLinks img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1.5rem;
+}
+
+/* Footer styling ends here */
+
+/* Modal styling */
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  margin: 10% auto;
+  width: 400px;
+  background: #fff;
+  color: #333;
+  position: relative;
+  animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 50px;
+}
+
+.modal-body h3 {
+  font-weight: bold;
+}
+
+.modal-body a {
+  color: #333333;
+  opacity: 0.8;
+}
+.modal-body .btn {
+  width: 100%;
+  margin-top: 30px;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.modal .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal .modal-footer {
+  background: #f7f7f9;
+  color: #333;
+  padding: 20px 0;
+  border-top: #eee 1px solid;
+  text-align: center;
+}
+
+.modal .modal-footer a {
+  color: steelblue;
+}
+
+/* Form */
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+  text-transform: uppercase;
+}
+
+.form-control input {
+  width: 100%;
+  border: 2px #ccc solid;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 70vh;
+  }
+  header .showcase img {
+    width: 200px;
+    height: 66.67px;
+  }
+  header .showcase .intro {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  header .showcase .channels {
+    display: none;
+  }
+  header .showcase .btn {
+    margin-top: 2rem;
+  }
+  /* Header queries */
+
+  .bundle .bundleGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+
+  .bundle .bundleGrid img {
+    width: 312.26px;
+    height: 70px;
+  }
+
+  /* Bundle queries */
+  .plans {
+    padding: 4rem 0;
+  }
+  .plans .plansText .extraLarge {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0 10px 10px 0;
+  }
+
+  .plans .plansText .intro {
+    font-size: 1rem;
+    max-width: 250px;
+    line-height: 1.8rem;
+  }
+  /* Plans queries */
+
+  .liveTv .liveTvText {
+    padding: 2rem 0.5rem;
+  }
+
+  .liveTv .liveTvText .extraLargeText {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .liveTv .liveTvText .intro {
+    font-size: 1rem;
+    max-width: 250px;
+    line-height: 1.8rem;
+  }
+
+  .liveTv .liveTvText .btn {
+    font-size: 0.8rem;
+  }
+  /* Live TV queries */
+
+  .liveTv2 {
+    background: url(./img/live-sports-small.jpg) no-repeat center center/cover;
+  }
+
+  .liveTv2 .extraLargeText {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .liveTv2 .intro {
+    font-size: 1rem;
+    max-width: 250px;
+    line-height: 1.8rem;
+  }
+
+  .liveTv2 .logoFlex {
+    display: flex;
+  }
+  /* Live TV2 queries */
+
+  footer .quickLinks {
+    grid-template-columns: 1fr;
+  }
+
+  .modal .modal-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  .bundle .bundleGrid img {
+    width: 230px;
+    height: 51.6px;
+  }
+}
+
+@media (max-width: 850px) {
+  .bundle .bundleGrid img {
+    width: 180px;
+    height: 40.38px;
+  }
+}

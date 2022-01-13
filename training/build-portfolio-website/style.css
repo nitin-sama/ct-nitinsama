@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+/* Font imports */
+
+:root {
+  --backgroundColor: #eee;
+  --fontColor: #000;
+  --infoBorder: rgba(170, 169, 169, 0.473);
+  --introBackground: #fff;
+  --introShadow: rgb(240, 234, 214);
+  --buttonColor: #000;
+}
+
+/* 1 #192734
+2 #78866b
+3 #7e4c74 */
+
+/* selected styles color */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  transition: 0.3s;
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* img {
+  width: 100%;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+i,
+label {
+  color: var(--fontColor);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+#submit-btn {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--fontColor);
+  background-color: var(--buttonColor);
+  border: 2px solid var(--infoBorder);
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#submit-btn:hover {
+  opacity: 0.8;
+}
+/* Global styles */
+
+/* Header styling starts here */
+
+header h1 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 3.3rem;
+  color: var(--fontColor);
+}
+
+/* Header styling ends here */
+
+/* Nav and  Intro styiling starts here */
+
+.navGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid var(--infoBorder);
+  padding: 1rem;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.navGrid .contact {
+  display: grid;
+  justify-content: end;
+}
+
+.navGrid .dots {
+  display: flex;
+}
+
+.navGrid .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  margin: 0 5px;
+  box-shadow: -4px 0px 3px -2px rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: -4px 0px 3px -2px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: -4px 0px 3px -2px rgba(0, 0, 0, 0.74);
+}
+
+.navGrid .dot1 {
+  background: red;
+}
+
+.navGrid .dot2 {
+  background: orange;
+}
+
+.navGrid .dot3 {
+  background: green;
+}
+
+/* Nav stylings ends here */
+
+/* Intro styling begins here */
+
+.intro {
+  padding: 60px;
+  border: 2px solid var(--infoBorder);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--introBackground);
+}
+
+.intro .image {
+  align-items: center;
+  text-align: center;
+}
+
+.intro .image img {
+  width: 200px;
+  border: 2px solid var(--infoBorder);
+}
+
+.intro .image .theme {
+  display: grid;
+  text-align: center;
+  align-items: center;
+}
+
+.intro .image .theme .themeDots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.intro .image .theme .themeDots .dots {
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  margin: 0 5px 5px 5px;
+  border: 2px solid var(--fontColor);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.intro .image .theme .themeDots .theme1 {
+  background: #fff;
+}
+
+.intro .image .theme .themeDots .theme2 {
+  background: #192734;
+}
+
+.intro .image .theme .themeDots .theme3 {
+  background: #78866b;
+}
+.intro .image .theme .themeDots .theme4 {
+  background: #7e4c74;
+}
+
+.intro .image .theme .themeDots .dots:hover {
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--fontColor);
+  transition: 0.3s;
+}
+
+.intro .image .theme h5 {
+  margin: 1rem 0;
+}
+
+.intro .image .theme p {
+  width: 300px;
+  margin: auto;
+  color: #888;
+}
+
+.intro .introText {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .introText .text {
+  width: 320px;
+  border: 2px solid rgb(44, 154, 190);
+  padding: 2rem 1rem;
+  position: relative;
+  background-color: var(--infoBorder);
+}
+
+.intro .introText .cornerCircles {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(44, 154, 190);
+  position: absolute;
+  background: #fff;
+}
+
+.intro .introText .circle1 {
+  left: -5px;
+  top: -5px;
+}
+
+.intro .introText .circle2 {
+  right: -5px;
+  top: -5px;
+}
+
+.intro .introText .circle3 {
+  left: -5px;
+  bottom: -5px;
+}
+
+.intro .introText .circle4 {
+  right: -5px;
+  bottom: -5px;
+}
+
+.intro .introText .text h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.intro .introText .text p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.intro .introText .introShadow {
+  background-color: var(--introShadow);
+  max-width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+/* Intro styling ends here */
+
+/* About styling begins here */
+
+.about {
+  background-color: var(--introBackground);
+  padding: 4rem 0;
+}
+
+.about .aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+.about .aboutGrid h3 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.about .aboutGrid p {
+  margin: 1rem 0 2rem 0;
+  opacity: 0.8;
+}
+
+.about .aboutGrid a {
+  color: blue;
+}
+
+.about .aboutGrid .text2Grid {
+  background-color: var(--introShadow);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 4rem;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.8rem;
+}
+
+.about .aboutGrid .text2Grid ul {
+  margin-left: 1rem;
+}
+
+.about img {
+  width: 100%;
+}
+
+.about .aboutImage {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* About styling ends here */
+
+/* Project styling starts here */
+
+.projects {
+  padding-bottom: 4rem;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.projects .projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.projects .projectGrid img {
+  width: 100%;
+}
+
+.projects .projectGrid h4 {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.projects .projectGrid p {
+  opacity: 0.8;
+}
+
+.projects .projectGrid .imageText {
+  padding: 1rem;
+}
+
+.projects .projectGrid .grid1 {
+  background-color: var(--introBackground);
+  border: 1px solid var(--infoBorder);
+  box-shadow: 10px 9px 32px -9px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 9px 32px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 9px 32px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* Projects  styling ends here */
+
+/* Get in touch form styling starts here */
+
+.form {
+  background-color: var(--introBackground);
+  padding: 2rem 0;
+}
+
+.form h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+#contact-form {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--infoBorder);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--backgroundColor);
+  margin-bottom: 50px;
+  line-height: 2.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--introBackground);
+  border-radius: 5px;
+  border: 1px solid var(--infoBorder);
+  font-size: 14px;
+}
+
+#contact-form textarea {
+  min-height: 100px;
+  font-size: 14px;
+}
+#submit-btn {
+  color: white;
+}
+
+/* Get in touch form styling ends here */
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+  .navIntro {
+    margin-bottom: 1rem;
+  }
+  .intro {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .introShadow {
+    display: none;
+  }
+
+  .about .aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .projects .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+}

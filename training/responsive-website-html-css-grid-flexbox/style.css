@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* Lato font */
+
+:root {
+  --primary-color: #047aed;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(98%);
+}
+
+/* global */
+
+/* Header styling begins */
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+header .headerGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .headerGrid nav ul {
+  display: flex;
+  margin: 2rem;
+}
+
+header .headerGrid nav ul a {
+  padding: 1rem 1rem;
+}
+
+header .headerGrid nav ul a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Header styling ends */
+
+/* Showcase styling starts here */
+
+.showcase {
+  background-color: var(--primary-color);
+  color: white;
+  height: 350px;
+  position: relative;
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase .showcaseGrid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  padding-top: 5rem;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+.showcase .showcaseGrid .showcaseText {
+  animation: slideInFromLeft 0.8s ease-in;
+}
+
+.showcase .showcaseGrid .showcaseText h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.showcase .showcaseGrid .showcaseText p {
+  line-height: 1.7rem;
+}
+
+.showcase .showcaseGrid .showcaseText .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.showcase .showcaseGrid .showcaseForm {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 350px;
+  align-self: center;
+  padding: 2.5rem 2rem;
+  -webkit-box-shadow: 0 0 5px rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  z-index: 1;
+  animation: slideInFromRight 0.8s ease-in;
+}
+
+.showcase .showcaseGrid .showcaseForm p {
+  color: black;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.showcase .showcaseGrid .showcaseForm input {
+  font-size: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.685);
+  padding: 2px;
+  width: 100%;
+}
+
+.showcase .showcaseGrid .showcaseForm input:focus {
+  outline: none;
+}
+
+.showcase .showcaseGrid .showcaseForm button {
+  margin-top: 1rem;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.showcase .showcaseGrid .showcaseForm button:hover {
+  transform: scale(98%);
+}
+/* Showcase styling starts here */
+
+/* Second section starts here */
+
+.second {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.secondHeading {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin: auto;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.second .iconsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.second .iconsGrid i {
+  font-size: 4rem;
+  color: #333333;
+}
+
+.second .iconsGrid p {
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.second .iconsGrid span {
+  font-size: 1.3rem;
+  color: #333333;
+  font-weight: 400;
+  padding: 1rem 0;
+  color: #1c3fad;
+}
+
+/* Second section styling ends here */
+
+/* Third section styling starts here */
+
+.thirdGrid {
+  margin: 3rem 0;
+}
+
+.thirdSection .thirdGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+
+.thirdSection .thirdGrid p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1.5rem 1rem;
+  margin: 2.5rem 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+}
+
+/* Third section styling starts here */
+
+/* Fourth section styling starts here */
+
+.fourthSection {
+  background-color: var(--primary-color);
+  padding: 1.5rem 0;
+}
+
+.fourthSection .fourthGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+}
+
+.fourthSection .fourthGrid .fourthContent {
+  align-self: center;
+  text-align: center;
+}
+
+.fourthSection .fourthGrid .fourthImage {
+  width: 400px;
+  align-self: center;
+  justify-self: center;
+}
+
+.fourthSection .fourthGrid .fourthContent h5 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.fourthSection .fourthGrid .fourthContent p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.fourthSection .fourthGrid .fourthContent button {
+  border: none;
+  margin-top: 2rem;
+  background-color: #002240;
+  color: #fff;
+}
+
+/* Fourth section styling ends here */
+
+/* Fifth section styling starts here */
+
+.language {
+  padding: 2rem 0;
+}
+
+.language h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.language .flex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.language .flex .card {
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+}
+
+.flex .card h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.language .flex .card:hover {
+  transform: translateY(-15px);
+}
+
+/* Fifth section styling ends here */
+
+/* Footer styling starts here */
+
+footer {
+  background-color: #002240;
+  color: white;
+  padding: 4rem 0;
+}
+
+footer .footerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer .logo h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+footer .logo p {
+  padding: 1rem 0;
+}
+
+footer .quickLinks li {
+  padding: 2px 0;
+}
+
+footer .socialMedia {
+  justify-self: center;
+  align-self: center;
+}
+
+footer .socialMedia i {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+}
+
+footer .socialMedia i:hover {
+  color: turquoise;
+}
+
+/* Footer styling ends here */
+
+/* Features page styling starts here */
+
+.features {
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+}
+
+.features .featuresGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+.features .featuresGrid .featuresText {
+  color: #fff;
+  align-self: center;
+}
+
+.features .featuresGrid .featuresText h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+.features .featuresGrid .featuresText p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.features .featuresGrid .featuresImage {
+  justify-self: flex-end;
+}
+
+.features .featuresGrid .featuresImage img {
+  width: 220px;
+  height: 200px;
+}
+
+/* Features page styling ends here */
+
+/* Features page platform styling starts here */
+
+.platform {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+}
+
+.platform .platformContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 3rem;
+}
+
+.platform .platformContainer .platformText {
+  align-self: center;
+  line-height: 1.6rem;
+}
+
+.platform .platformContainer .platformText h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+
+.platform .platformContainer .platformImage img {
+  width: 300px;
+  height: 300px;
+}
+/* Features page platform styling ends here */
+
+/* Grid styling starts */
+.gridSection {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.gridSection .grids {
+  display: flex;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+}
+
+.gridSection .grids i {
+  font-size: 4rem;
+  align-self: center;
+  padding-right: 1rem;
+  color: #333333;
+}
+
+.gridSection div:first-child {
+  grid-column: 1 / span 3;
+}
+
+.gridSection div:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+/* Grid styling ends */
+
+/* Styling of features page ends */
+
+/* Styling of docs page begins */
+
+/* Styling of docs page begins */
+
+/*  docs heading kept same as features */
+
+.docsContainer {
+  padding: 3rem 0;
+}
+
+.docsContainer .docsGrid {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  grid-gap: 3rem;
+}
+
+.docsContainer .docsGrid .docsLinks {
+  background-color: #f4f4f4;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  align-self: flex-start;
+}
+
+.docsContainer .docsGrid .docsLinks h3 {
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.docsContainer .docsGrid .docsLinks li {
+  font-size: 1rem;
+  padding: 7px 0;
+  border-bottom: 1px solid #3333335f;
+}
+
+.docsContainer .docsGrid .docsLinks a {
+  color: black;
+  padding: 5px;
+}
+
+.docsContainer .docsGrid .docsLinks .active {
+  color: blue;
+}
+
+.docsContainer .docsGrid .docsIntro {
+  padding: 1.5rem 1.3rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+.docsContainer .docsGrid .docsIntro h2 {
+  font-weight: lighter;
+  padding: 1rem 0;
+}
+
+.docsContainer .docsGrid .docsIntro .success {
+  display: flex;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.docsContainer .docsGrid .docsIntro .success i {
+  padding: 0 1rem;
+}
+
+.docsContainer .docsGrid .docsIntro .success p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: -2px;
+}
+
+.docsContainer .docsGrid .docsIntro {
+  line-height: 1.4rem;
+}
+
+.docsContainer .docsGrid .docsIntro h3 {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.docsContainer .docsGrid .docsIntro .btn {
+  border: none;
+  background-color: #047aed;
+  color: white;
+  margin: 1rem 0;
+}
+
+.docsContainer .docsGrid .docsIntro .dark {
+  background-color: #333;
+  color: #fff;
+  font-size: small;
+  padding: 10px 10px;
+  margin: 1rem 0;
+}
+
+/* Docs page styling ends here */
+
+/* Media queries begins */
+
+@media (max-width: 650px) {
+  header .headerGrid h1 {
+    margin-top: 1rem;
+  }
+  header .headerGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .showcase {
+    height: 550px;
+  }
+
+  .showcase .showcaseGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+  }
+
+  .showcase .showcaseGrid .showcaseText {
+    text-align: center;
+    animation: slideInFromTop 0.8s ease-in;
+  }
+
+  .showcase .showcaseGrid .showcaseForm {
+    justify-self: center;
+    width: 300px;
+    animation: slideInFromBottom 0.8s ease-in;
+  }
+
+  .second .iconsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  .second .iconsGrid .iconsItem {
+    margin-bottom: 1rem;
+  }
+
+  .thirdSection .thirdGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .fourthSection .fourthGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  footer .footerGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+  }
+
+  /* Home page media queries ends */
+
+  .features .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .features .featuresGrid .featuresText {
+    text-align: center;
+    order: 2;
+  }
+
+  .features .featuresGrid .featuresImage {
+    justify-self: center;
+    order: 1;
+  }
+
+  .platform .platformContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .platform .platformContainer .platformText {
+    width: none;
+    align-self: center;
+    line-height: 1.6rem;
+  }
+
+  .platform .platformContainer .platformImage {
+    justify-self: center;
+  }
+
+  .gridSection {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .gridSection div:first-child {
+    grid-column: 1 / span 1;
+  }
+
+  .gridSection div:nth-child(2) {
+    grid-column: 1 / span 1;
+  }
+
+  .docsContainer .docsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header .headerGrid ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  header .headerGrid a {
+    display: grid;
+  }
+
+  /* Showcase */
+
+  .showcase {
+    height: 300px;
+  }
+
+  .showcase .showcaseForm {
+    display: none;
+  }
+
+  /* Features page grid */
+  .gridSection {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .gridSection div:first-child {
+    grid-column: 1 / span 1;
+  }
+
+  .gridSection div:nth-child(2) {
+    grid-column: 1 / span 1;
+  }
+
+  /* Docs Intoduction */
+  .docsContainer .docsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .socialMedia {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animations */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

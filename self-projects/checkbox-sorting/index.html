@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkbox sorting" />
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Checkbox Sorting</title>
+  </head>
+  <body>
+    <main>
+      <!-- Filter projects -->
+      <section class="filter-projects">
+        <div class="container">
+          <button class="filter-projects__filter" id="showfilters">
+            FILTER
+          </button>
+          <div class="filter-projects__content">
+            <div class="filter-projects__content__heading">
+              <div class="filter-projects__content__heading__text">
+                <h2><span>364</span> Projects Displayed</h2>
+                <p>
+                  FILTERS: <span id="filter-text">No filter selected!</span>
+                </p>
+              </div>
+              <button id="clearFilter">CLEAR FILTER</button>
+            </div>
+            <div class="filter-projects__content__list">
+              <div class="filter-projects__content__list__services">
+                <div class="filter-projects__content__list__header">
+                  <i class="icons icon-plus"></i>
+                  <h3>Services</h3>
+                </div>
+                <ul class="list">
+                  <li>
+                    <input
+                      id="mowing"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="mowing">Lawn Mowing & Maintenance</label>
+                  </li>
+                  <li>
+                    <input
+                      id="hogging"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="hogging">Brush Hogging & Field Mowing</label>
+                  </li>
+                  <li>
+                    <input
+                      id="clearing"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="clearing"
+                      >Land Clearing, Tree & Stump Removal</label
+                    >
+                  </li>
+                  <li>
+                    <input
+                      id="gardening"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="gardening">Gardening, Weeding, Bed Work</label>
+                  </li>
+                  <li>
+                    <input
+                      id="trimming"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="trimming">Hedge Trimming</label>
+                  </li>
+                  <li>
+                    <input
+                      id="installation"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="installation">Beauty Bark Installation</label>
+                  </li>
+                  <li>
+                    <input
+                      id="removal"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="removal">Blackberry Bush Removal</label>
+                  </li>
+                  <li>
+                    <input
+                      id="pruning"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="pruning">Tree and Hedge Pruning</label>
+                  </li>
+                  <li>
+                    <input
+                      id="paving"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="paving">Paving Services</label>
+                  </li>
+                  <li>
+                    <input
+                      id="mulching"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="mulching">Forestry Mulching</label>
+                  </li>
+                  <li>
+                    <input
+                      id="gravel"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="gravel">Gravel Work</label>
+                  </li>
+                  <li>
+                    <input
+                      id="patio"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="patio">Patio Building</label>
+                  </li>
+                  <li>
+                    <input
+                      id="sprinkler"
+                      data-type="services"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="sprinkler"
+                      >Sprinkler System installation and maintenance</label
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="filter-projects__content__list__category">
+                <div class="filter-projects__content__list__header">
+                  <i class="icons icon-minus"></i>
+                  <h3>Catergory</h3>
+                </div>
+                <ul class="list">
+                  <li>
+                    <input
+                      id="residential"
+                      data-type="categories"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="residential">Residential</label>
+                  </li>
+                  <li>
+                    <input
+                      id="commercial"
+                      data-type="categories"
+                      type="checkbox"
+                    /><span class="checkmark"></span
+                    ><label for="commercial">Commercial</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Script File -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

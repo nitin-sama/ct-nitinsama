@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Foundation Framework">
+
+        <!-- Compressed CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f91efc2493.js" crossorigin="anonymous"></script>
+        
+        <title>Foundation Framework</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <!-- The following files must be included in your JavaScript to use this plugin:
+
+        foundation.core.js
+        foundation.responsiveMenu.js
+        With utility library foundation.util.triggers.js
+        With utility library foundation.util.mediaQuery.js
+        foundation.responsiveToggle.js
+        With utility library foundation.util.mediaQuery.js
+        With utility library foundation.util.motion.js -->
+        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+            <li>
+              <a href="#">Item 1</a>
+              <ul class="vertical menu">
+                <li>
+                  <a href="#">Item 1A</a>
+                  <ul class="vertical menu">
+                    <li><a href="#">Item 1A</a></li>
+                    <li><a href="#">Item 1B</a></li>
+                    <li><a href="#">Item 1C</a></li>
+                    <li><a href="#">Item 1D</a></li>
+                    <li><a href="#">Item 1E</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Item 1B</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Item 2</a>
+              <ul class="vertical menu">
+                <li><a href="#">Item 2A</a></li>
+                <li><a href="#">Item 2B</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Item 3</a>
+              <ul class="vertical menu">
+                <li><a href="#">Item 3A</a></li>
+                <li><a href="#">Item 3B</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        <hr>
+        <!-- Typography -->
+        <div class="row">
+            <!-- Heading -->
+            <h1>Hello <small>world!</small></h1>
+            <h2>Hello <small>world!</small></h2>
+
+            <!-- Paragraph -->
+            <p class="lead"><strong>Lorem, ipsum dolor.</strong>Lorem ipsum dolor sit amet. <em>Lorem, ipsum.</em> <a href="">Lorem.</a>Lorem ipsum dolor sit amet.</p>
+            <p><strong>Lorem, ipsum dolor.</strong>Lorem ipsum dolor sit amet. <em>Lorem, ipsum.</em> <a href="">Lorem.</a>Lorem ipsum dolor sit amet.</p>
+            
+            <!-- Stat -->
+            <p>Server Up-Time</p>
+            <div class="stat">220</div>
+        </div>
+
+        <hr>
+
+        <!-- Alignment -->
+        
+        <p class="text-left">Left aligned text.</p>
+        <p class="text-center">Center aligned text.</p>
+        <p class="text-right">Right aligned text.</p>
+        <p class="text-justified">Justified text.</p>
+        
+        <!-- Floats -->
+
+        <div class="callout clearfix">
+            <a href="" class="button float-left">Left</a>
+            <a href="" class="button float-right">Right</a>
+        </div>
+
+        <hr>
+
+        <!-- Code -->
+
+        <code>&lt;div class="myClass"&gt;Hello World&lt;/div&gt;</code>
+        <p>Press <kbd>Cmd+r</kbd> (or <kbd>Ctrl+r</kbd> on Windows)</p>
+    
+        <hr>
+
+        <!-- Blockquote -->
+        <blockquote>
+            Blockquote from foundation.
+            <cite>Nitin Thakur</cite>
+        </blockquote>
+        
+         <!-- List -->
+        <ul >
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ul class="no-bullet">
+                    <li>Nested Item 1</li>
+                    <li>Nested Item 2</li>
+                    <li>Nested Item 3</li>
+                </ul>
+            </li>
+            <li>Item 4</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ol>
+                    <li>Nested Item 1</li>
+                    <li>Nested Item 2</li>
+                    <li>Nested Item 3</li>
+                </ol>
+            </li>
+            <li>Item 4</li>
+        </ol>
+
+        <hr>
+
+        <!-- Visibility Classes -->
+
+        <p class="hide">Hidden</p>
+        <p class="invisible">Invisible</p>
+        <p>Small screen or larger.</p>
+        <p class="show-for-medium">Medium or large screen.</p>
+        <div class="show-for-large">Large or larger.</div>
+        <div class="hide-for-small-only">Not small screen.</div>
+        <div class="hide-for-medium-only">Not medium screen.</div>
+        <div class="hide-for-large-only">Not large screen.</div>
+        <div class="show-for-landscape">Landscape.</div>
+        <div class="show-for-portrait">Portrait.</div>
+
+        <hr>
+
+        <!-- Buttons -->
+
+        <button class="button">Button</button>
+        <a href="#" class="button">Button</a>
+        <input type="button" value="Input" class="button">
+        <hr>
+        <button class="success button">Success</button>
+        <button class="alert button">Alert</button>
+        <button class="warning button">Warning</button>
+        <button class="secondary button">Secondary</button>
+        <button class="disabled button">Disabled</button>
+        <hr>
+        <button class="success button hollow">Success hollow</button>
+        <button class="alert button hollow">Alert hollow</button>
+        <button class="warning button hollow">Warning hollow</button>
+        <button class="secondary button hollow">Secondary hollow</button>
+        <button class="disabled button hollow">Disabled hollow</button>
+        <hr>
+        <button class="tiny button">Tiny</button>
+        <button class="small button">Small</button>
+        <button class="button">Button</button>
+        <button class="large button">Large</button>
+        <button class="expanded button">Expanded</button>
+        <button class="expanded large button">Expanded large</button>
+        
+        <hr>
+
+        <!-- Forms -->
+
+        <form action="">
+            <div>
+                <label for="">Name</label>
+                <input type="text" placeholder="enter name">
+            </div>
+            <div>
+                <label for="">Email</label>
+                <input type="email" placeholder="enter email">
+            </div>
+            <div>
+                <label for="">Number</label>
+                <input type="number" placeholder="">
+            </div>
+            <div>
+                <label for="">Message</label>
+                <textarea></textarea>
+            </div>
+            <div>
+                <label for="">Gender</label>
+                <select name="" id="">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Others</option>
+                </select>
+            </div>
+            <fieldset class="fieldset">
+                <legend>A fieldset</legend>
+                <input type="checkbox"><label for="">Checkbox</label>
+                <input type="checkbox"><label for="">Checkbox</label>
+                <input type="checkbox"><label for="">Checkbox</label>
+            </fieldset>
+            <label for="fileupload" class="button">Upload File</label>
+            <input type="file" id="fileUpload" class="show-for-sr">
+            <label for="">Password</label>
+            <input type="password">
+            <p class="help-text">Your password must be 8 characters or more.</p>
+
+            <div class="switch">
+                <input class="switch-input" type="checkbox" id="mySwitch" name="exampleSwitch">
+                <label class="switch-paddle" for="mySwitch">
+                    <span class="show-for-sr">Enabled</span>
+                </label>
+            </div>
+
+            <div class="slider" data-slider data-initial-start="50" data-end="200">
+                <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+                <span class="slider-fill" data-slider-fill></span>
+                <input type="hidden">
+            </div>
+        </form>
+
+        <!-- Tables -->
+        
+        <div class="row">
+            <table class="striped hover stack">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Nitin</td>
+                    <td>Thakur</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Nitin</td>
+                    <td>Thakur</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Nitin</td>
+                    <td>Thakur</td>
+                    <td>23</td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- Menu -->
+
+        <ul class="menu">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+
+        <ul class="menu align-right">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+          </ul>
+
+          <hr>
+
+        <!-- icons (icons package needed)-->
+
+        <ul class="menu icon-top">
+            <li><a href=""><i class="fi-list"></i> <span>One</span></a></li>
+            <li><a href=""><i class="fi-list"></i> <span>Two</span></a></li>
+            <li><a href=""><i class="fi-list"></i> <span>Three</span></a></li>
+            <li><a href=""><i class="fi-list"></i> <span>Four</span></a></li>
+        </ul>  
+
+        <!-- Callouts -->
+
+        <div class="callout">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id.</p>
+        </div>
+        <div class="callout secondary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id.</p>
+        </div>
+        <div class="callout success">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id.</p>
+        </div>
+        <div class="callout primary">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id.</p>
+        </div>
+        <div class="callout alert">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id.</p>
+        </div>
+
+
+        <!-- Progress bar-->
+        <div class="secondary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+            <div class="progress-meter" style="width: 25%">
+                <p class="progress-meter-text">25%</p>
+            </div>
+          </div>
+          
+          <div class="success progress">
+            <div class="progress-meter" style="width: 50%">
+                <p class="progress-meter-text">50%</p>
+            </div>
+          </div>
+          
+          <div class="warning progress">
+            <div class="progress-meter" style="width: 50%">
+                <p class="progress-meter-text">50%</p>
+            </div>
+          </div>
+          
+          <div class="alert progress">
+            <div class="progress-meter" style="width: 75%">
+                <p class="progress-meter-text">75%</p>
+            </div>
+          </div>
+
+          <!-- Labels -->
+
+          <span class="primary label">Primary label.</span>
+          <span class="success label">Success label.</span>
+          <span class="warning label">Warning label.</span>
+          <span class="alert label">Alert label.</span>
+          <hr>
+
+           <!-- Badges -->
+
+           <span class="primary badge">1</span>
+           <span class="success badge">2</span>
+           <span class="warning badge">3</span>
+           <span class="alert badge">4</span>
+            <hr>
+
+           <!-- Navigation -->
+
+           <nav role="navigation">
+               <ul class="breadcrumbs">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li>Current</li>
+               </ul>
+           </nav>
+           <hr>
+
+           <!-- Pagination -->
+
+           <ul class="pagination" role="navigation">
+               <li class="disabled">Previous</li>
+               <li class="current">1</li>
+               <li><a href="#">2</a></li>
+               <li class="ellipsis"></li>
+               <li><a href="#">13</a></li>
+               <li><a href="#">14</a></li>
+               <li><a href="#">Next</a></li>
+           </ul>
+           <hr>
+
+           <!-- Grid -->
+
+           <!-- Cards -->
+
+           <!-- Media Object -->
+
+           <!-- Accordion -->
+
+           <!-- Tabs -->
+
+        <div style="height: 500px;"></div>
+
+       
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <!-- Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/js/plugins/foundation.slider.min.js"></script>
+    <!-- Script File -->
+    <script src="main.js"></script>
+    </body>
+</html>

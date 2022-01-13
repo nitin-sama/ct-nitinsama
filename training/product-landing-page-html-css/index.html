@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="Product Landing Page HTML CSS">
+
+        <!-- Lightbox css -->
+        <link rel="stylesheet" href="./simplelightbox/dist/simple-lightbox.min.css">
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f91efc2493.js" crossorigin="anonymous"></script>
+        
+        <title>Product Page</title>
+    </head>
+    <body>
+        <!-- Nav -->
+        <div class="nav">
+            <div class="container">
+                <div class="navGrid">
+                    <div class="logo"><h1>HueHue</h1></div>
+                    <div class="navItems">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Showcase -->
+        <section class="showcase">
+            <div class="container">
+                <div class="showcaseContent">
+                    <div class="showcaseImage">
+                        <img src="./img/showcase.jpg" alt="Headphones">
+                    </div>
+                    <div class="showcaseText">
+                        <h3>The Headphones of the Future</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam consequuntur doloremque repudiandae delectus voluptas ut recusandae saepe commodi earum.</p>
+                        <button class="btn">Read More</button>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Image section -->
+        <section class="imageSection">
+            <div class="overlayColor">
+                <div class="container">
+                    <div class="imageContent">
+                        <h3>People aren't hearing all the Music..</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit cupiditate temporibus nostrum mollitia iure molestiae et minus eligendi beatae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Image gallery -->
+        <div class="gallery">
+            <a href="./img/image1.jpeg">
+                <img src="./img/image1.jpeg" class="images image1" alt="image 1" title="Image 1"/>
+            </a>
+            <a href="./img/image2.jpeg">
+                <img src="./img/image2.jpeg" class="images" alt="image 2" title="Image 2"/>
+            </a>
+            <a href="./img/image6.jpeg">
+                <img src="./img/image6.jpeg" class="images" alt="image 3" title="Image 3"/>
+            </a>
+            <a href="./img/image4.jpeg">
+                <img src="./img/image4.jpeg" class="images" alt="image 4" title="Image 4"/>
+            </a>
+            <a href="./img/image5.jpeg">
+                <img src="./img/image5.jpeg" class="images" alt="image 5" title="Image 5"/>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <div class="footerGrid">
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+                    </div>
+                    <div class="footerGrid">
+                        <h4>Company Info</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Contact</li>
+                            <li>Services</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                    <div class="footerGrid">
+                        <h4>Blog Posts</h4>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                    <div class="footerGrid">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>lorem</li>
+                            <li>lorem</li>
+                            <li>Lorem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Light box Script File -->
+    <script src="./simplelightbox/dist/simple-lightbox.min.js"></script>
+    <script>
+        (function() {
+            var $gallery = new SimpleLightbox('.gallery a', {});
+        })();
+    </script>
+    </body>
+</html>

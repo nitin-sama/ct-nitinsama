@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Global styles */
+
+/* Section styles starts here */
+
+.section1 {
+  background: url(./img/image.png) no-repeat center center/cover;
+  background-position-x: 100px;
+  background-position-y: 10px;
+}
+
+.section1 .wrap {
+  background: rgba(12, 12, 12, 0.459);
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  color: #fff;
+}
+
+/* Section styles ends here */
+
+.features li img {
+  width: 200px !important;
+}

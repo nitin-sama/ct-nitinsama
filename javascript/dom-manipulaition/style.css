@@ -1,0 +1,109 @@
+/* Global style starts here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+  transform: scale(101%);
+}
+
+input[type="button"] {
+  border: none;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+input[type="button"]:hover {
+  opacity: 1;
+  transform: scale(101%);
+}
+
+/* Global style ends here */
+
+/* Header style begins here */
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: cadetblue;
+}
+
+/* Header style begins here */
+
+/* Section style starts here */
+
+section {
+  border: 1px solid grey;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section input {
+  padding: 10px;
+}
+
+section input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+section form {
+  display: grid;
+  grid-template-columns: 0fr 3fr 1fr;
+}
+
+section h3 {
+  margin: 10px 0;
+}
+
+section ul li {
+  padding: 10px 10px;
+  margin: 10px 0;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+section ul li:hover {
+  background-color: rgba(118, 198, 209, 0.178);
+}
+/* Section style starts here */
+
+.event-checker {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 0;
+  font-size: 20px;
+}

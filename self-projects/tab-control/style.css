@@ -1,0 +1,53 @@
+body {
+  background-color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+
+.tab-border {
+  border-bottom: 4px solid red;
+}
+
+.tab-control {
+  border: 2px solid salmon;
+  height: 400px;
+}
+.tabs .tabs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* border-bottom: 2px solid salmon; */
+}
+
+.tabs .tabs-grid div {
+  background-color: rgba(250, 128, 114, 0.46);
+}
+
+.tabs .tabs-grid div:hover {
+  background-color: rgba(250, 128, 114, 0.1);
+  cursor: pointer;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.tab-content .tab-content-item p {
+  font-size: 20px;
+  padding: 60px;
+}

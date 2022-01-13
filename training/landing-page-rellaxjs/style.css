@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+}
+
+/* Global styles end here */
+
+/* Section 1 styles starts here */
+
+.section1 {
+  height: 70vh;
+  background: url(./img/background.jpg) no-repeat center center/cover;
+  color: white;
+}
+
+.topContent {
+  position: absolute;
+  font-size: 1.8rem;
+  text-align: center;
+  top: 200px;
+  right: 100px;
+}
+
+/* Section 1 styles ends here */
+
+/* Section 2 styles starts here */
+
+.section2 {
+  padding: 2rem;
+  background-image: url(./img/texture.jpg);
+  height: 400px;
+}
+
+.section2 img {
+  width: 350px;
+}
+
+.section2 .grid {
+  width: 80%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: auto;
+  right: 100px;
+}
+
+.section2 .paragraph > div {
+  margin: 2rem;
+  background: rgba(197, 223, 83, 0.692);
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Section 2 styles ends here */
+
+/* Section 3 styles starts here */
+
+.section3 {
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+.section3 .grid2 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid2 > div {
+  margin: 2rem;
+  background: rgba(197, 223, 83, 0.692);
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Section 3 styles ends here */

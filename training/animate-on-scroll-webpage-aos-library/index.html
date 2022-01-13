@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Animate Scroll Webpage">
+
+        <!-- Animate on Scroll Style Sheet-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f91efc2493.js" crossorigin="anonymous"></script>
+        
+        <title>Animate On Scroll Webpage | AOS Library</title>
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <header class="main-header">
+            <h1><span>Nitin Thakur</span> is my name.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, adipisci?</p>
+        </header>
+
+        <!-- Cards container -->
+
+        <main class="container">
+            <section class="card">
+                <img src="./img/square.jpg" alt="square" loading="lazy" />
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod placeat adipisci laudantium vel esse perferendis eaque accusamus quasi magnam voluptates praesentium animi explicabo consectetur quam ipsum quaerat, quibusdam ratione!</p>
+                    <a href="#" class="btn">Click Me!</a>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+                <img src="./img/square.jpg" alt="square" loading="lazy" />
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod placeat adipisci laudantium vel esse perferendis eaque accusamus quasi magnam voluptates praesentium animi explicabo consectetur quam ipsum quaerat, quibusdam ratione!</p>
+                    <a href="#" class="btn">Click Me!</a>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+                <img src="./img/square.jpg" alt="square" loading="lazy" />
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod placeat adipisci laudantium vel esse perferendis eaque accusamus quasi magnam voluptates praesentium animi explicabo consectetur quam ipsum quaerat, quibusdam ratione!</p>
+                    <a href="#" class="btn">Click Me!</a>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+                <img src="./img/square.jpg" alt="square" loading="lazy" />
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod placeat adipisci laudantium vel esse perferendis eaque accusamus quasi magnam voluptates praesentium animi explicabo consectetur quam ipsum quaerat, quibusdam ratione!</p>
+                    <a href="#" class="btn">Click Me!</a>
+                </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+                <img src="./img/square.jpg" alt="square" loading="lazy" />
+                <div>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod placeat adipisci laudantium vel esse perferendis eaque accusamus quasi magnam voluptates praesentium animi explicabo consectetur quam ipsum quaerat, quibusdam ratione!</p>
+                    <a href="#" class="btn">Click Me!</a>
+                </div>
+            </section>
+        </main>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
+        });
+    </script>
+    </body>
+</html>

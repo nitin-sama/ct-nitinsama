@@ -1,0 +1,236 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+.btn {
+  border: none;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  border: 1px solid #333;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+/* Global styles */
+
+/* Nav styling begins!! */
+
+.navGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px;
+}
+
+.navGrid li {
+  display: inline-block;
+}
+
+.navGrid .navItems {
+  justify-self: end;
+  align-self: center;
+}
+
+.navGrid .navItems ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navGrid .navItems a {
+  padding: 0.5rem 0.5rem;
+  font-weight: 600;
+}
+
+.navGrid .navItems a:hover {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Navbar styling ends here */
+
+.showcase {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcaseContent .showcaseImage {
+  width: 200px;
+  margin: auto;
+}
+
+.showcaseContent {
+  text-align: center;
+}
+
+.showcaseContent h3 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+/* Showcase styling end here */
+
+/* Image section styling starts here */
+
+.imageSection {
+  margin-top: 2rem;
+  text-align: center;
+  background: url(./img/imageContent.jpg) no-repeat center center/cover;
+  height: 400px;
+  color: white;
+}
+
+.overlayColor {
+  background: rgba(0, 0, 0, 0.494);
+  height: 400px;
+  display: grid;
+}
+
+.imageSection .imageContent h3 {
+  font-size: 2rem;
+}
+
+.imageSection .imageContent p {
+  padding-top: 2rem;
+  line-height: 1.6rem;
+}
+
+/* Image section styling ends here */
+
+/* Gallery styling starts here */
+.gallery img,
+.gallery a {
+  width: 100%;
+  height: 200px;
+}
+
+.gallery .images {
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Gallery styling ends here */
+
+/* Footer styling starts here */
+
+footer {
+  padding: 2rem 0;
+  background: var(--secondary-color);
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+.footer h4 {
+  margin-top: 15px;
+}
+
+.footer li {
+  padding-top: 10px;
+}
+
+/* Footer styling ends here */
+
+/* Media queries */
+
+@media (min-width: 700px) {
+  .showcaseContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    line-height: 1.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .showcase {
+    width: 70%;
+    margin: auto;
+  }
+  .showcaseContent .showcaseImage {
+    width: 400px;
+  }
+
+  .imageSection .imageContent h3 {
+    font-size: 2rem;
+  }
+
+  .imageSection .imageContent p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .gallery .images img {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .gallery a:first-child {
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-row: 1/3;
+    grid-column: 1/3;
+    object-fit: cover;
+    height: 600px;
+  }
+  .gallery .image1 {
+    height: 600px;
+  }
+
+  .gallery a:nth-child(2) {
+    grid-column: 3/5;
+  }
+  .gallery a:nth-child(5) {
+    grid-row: 2/3;
+    grid-column: 4/6;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+  }
+}
