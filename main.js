@@ -37,16 +37,28 @@ button1.addEventListener('click', ()=>{
     arrow1.classList.add('show');
     arrow2.classList.remove('show');
     arrow3.classList.remove('show');
+    button1.classList.add('tab-border');
+    button1.classList.remove('tab-border');
+    button1.classList.remove('tab-border');
+
 })
 
 button3.addEventListener('click', ()=>{
     arrow1.classList.remove('show');
     arrow2.classList.add('show');
     arrow3.classList.remove('show');
+    
+    button1.classList.remove('tab-border');
+    button1.classList.add('tab-border');
+    button1.classList.remove('tab-border');
 })
 
 button2.addEventListener('click', ()=>{
     arrow1.classList.remove('show');
     arrow2.classList.remove('show');
     arrow3.classList.add('show');
+
+    button1.classList.remove('tab-border');
+    button1.classList.remove('tab-border');
+    button1.classList.add('tab-border');
 })
