@@ -1,4 +1,4 @@
-.container a {
+a {
     text-decoration: none;
     border-bottom: 2px solid rgba(61, 69, 73, 0.1);
     position: relative;
@@ -7,7 +7,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container a:after {
+a:after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -18,8 +18,8 @@
     color: red;
 }
 
-.container a:hover:after,
-.container a:focus:after {
+a:hover:after,
+a:focus:after {
     width: 100%;
 }
 
