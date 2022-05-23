@@ -1,0 +1,37 @@
+a {
+    text-decoration: none;
+    border-bottom: 2px solid rgba(61, 69, 73, 0.1);
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid currentColor;
+    transition: width 0.5s ease;
+    color: red;
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 20px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
