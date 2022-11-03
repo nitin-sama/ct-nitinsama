@@ -131,3 +131,12 @@ h2.title {
 .container.accordian {
     font-family:monospace;
 }
+
+h3 {
+    font-family:monospace;
+    font-size: 40px;
+}
+
+main {
+    padding: 0 40px;
+}

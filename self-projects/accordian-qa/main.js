@@ -1,6 +1,6 @@
 // Accordian
 
-jQuery(document).ready(function ($) {
+$(document).ready(function () {
   var $titleTab = $('.title_tab');
   $('.Accordion_item:eq(0)').find('.title_tab').addClass('active').next().stop().slideDown(300);
   $('.Accordion_item:eq(0)').find('.inner_content').find('p').addClass('show');
